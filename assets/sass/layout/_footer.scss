@@ -1,0 +1,106 @@
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  color: #545454;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5.7rem 0;
+  background-color: white;
+
+  .container {
+    max-width: $layout-width-desktop;
+
+    @media (max-width: 1280px) {
+      max-width: $layout-width-laptop-large;
+    }
+    @media (max-width: 1100px) {
+      max-width: $layout-width-laptop-medium;
+    }
+    @media (max-width: 1024px) {
+      max-width: $layout-width-laptop-small;
+    }
+    @media (max-width: 768px) {
+      max-width: $layout-width-tablet-large;
+    }
+    @media (max-width: 660px) {
+      max-width: $layout-width-tablet-medium;
+    }
+    @media (max-width: 520px) {
+      max-width: $layout-width-tablet-small;
+    }
+    @media (max-width: 360px) {
+      max-width: $layout-width-mobile;
+    }
+
+    .row {
+      &.footer-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 5rem;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr 1fr;
+          row-gap: 2rem;
+
+          .column {
+            h5 {
+              margin-bottom: 1rem;
+            }
+            ul {
+              li {
+                margin-bottom: 1rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        h5 {
+          color: #101a56;
+          font-size: 16px;
+          font-weight: 600;
+          // line-height: 24px;
+          margin-bottom: 2rem;
+        }
+        ul {
+          li {
+            color: #545454;
+            font-size: 14px;
+            // font-weight: 600;
+            margin-bottom: 2rem;
+            cursor: pointer;
+
+            a {
+              color: #545454;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &.social {
+        margin-bottom: 3rem;
+        ul {
+          display: flex;
+          align-items: center;
+
+          li {
+            margin-right: 2rem;
+            a {
+              text-decoration: none;
+              color: #111c55;
+              font-size: 2.4rem;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &.description {
+        margin-bottom: 3rem;
+      }
+      &.copyright {
+      }
+    }
+  }
+}
