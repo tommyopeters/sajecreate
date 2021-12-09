@@ -1,0 +1,58 @@
+main {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 6rem;
+      font-weight: normal;
+      text-align: center;
+      width: 75%;
+      margin-bottom: 5rem;
+    }
+  }
+}
+.landing {
+  .project-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+
+    .project-list-item {
+      width: 100%;
+      aspect-ratio: 1/1;
+
+      &.cadbury {
+        background: #b31557 url("~assets/images/cadbury-square.png");
+        background-size: cover;
+      }
+      &.diamondz {
+        background: #b31557 url("~assets/images/diamondz-square.png");
+        background-size: cover;
+      }
+      &.amebo {
+        background: #b31557 url("~assets/images/amebo-of-lagos-square.png");
+        background-size: cover;
+      }
+      &.cyclo {
+        background: #b31557 url("~assets/images/cyclo-square.png");
+        background-size: cover;
+      }
+      &.ivvy {
+        background: #b31557 url("~assets/images/ivvy-square.png");
+        background-size: cover;
+      }
+      &.op-vine {
+        background: #b31557 url("~assets/images/op-vine-square.png");
+        background-size: cover;
+      }
+    }
+  }
+  .project-list-item {
+    cursor: pointer;
+    pointer-events: all;
+  }
+}
